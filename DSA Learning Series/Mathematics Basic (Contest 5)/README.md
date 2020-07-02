@@ -18,5 +18,9 @@ int gcd(int a, int b)
 
 IN-BUILT function :
 ```cpp
-__gcd(10,20)
+__gcd(a,b)
+```
+## 2. LCM SAMPLE CODE 
+```cpp
+(a*b)/__gcd(a,b)
 ```
