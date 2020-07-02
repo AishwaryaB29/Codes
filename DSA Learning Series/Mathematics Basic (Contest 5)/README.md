@@ -1,6 +1,6 @@
-## MATHEMATICS IN COMPETITIVE PROGRAMMING
+# MATHEMATICS IN COMPETITIVE PROGRAMMING
 
-1. GCD SAMPLE CODE
+## 1. GCD SAMPLE CODE
 ```cpp
 int gcd(int a, int b) 
 {  
@@ -14,4 +14,9 @@ int gcd(int a, int b)
         return gcd(a-b, b); 
     return gcd(a, b-a); 
 } 
+```
+
+IN-BUILT function :
+```cpp
+__gcd(10,20)
 ```
