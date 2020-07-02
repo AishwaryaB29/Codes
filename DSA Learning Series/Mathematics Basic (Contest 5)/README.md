@@ -22,5 +22,5 @@ __gcd(a,b)
 ```
 ## 2. LCM SAMPLE CODE 
 ```cpp
-(a*b)/__gcd(a,b)
+(a*b) / ( __gcd(a,b) (
 ```
