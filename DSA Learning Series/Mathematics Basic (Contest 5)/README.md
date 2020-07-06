@@ -22,9 +22,9 @@ __gcd(a,b)
 ```
 ## 2. LCM SAMPLE CODE 
 ```cpp
-(a*b) / ( __gcd(a,b) (
+(a*b) / ( __gcd(a,b) )
 ```
 
 ## 3. DIFFERENCE OF TWO SQUARES
 
- **!!! IMPORTANT NOTE : Any number can be represented as a difference of two squares iff (the number)%4 != 2 !!!**
+_!!! IMPORTANT NOTE : Any number can be represented as a difference of two squares iff (the number)%4 != 2 !!!_
