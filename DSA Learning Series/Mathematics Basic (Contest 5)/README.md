@@ -27,4 +27,4 @@ __gcd(a,b)
 
 ## 3. DIFFERENCE OF TWO SQUARES
 
- **!!! IMPORTANT NOTE : AnY number can be represented as a difference of two squares iff (the number)%4 != 2 !!!**
+ **!!! IMPORTANT NOTE : Any number can be represented as a difference of two squares iff (the number)%4 != 2 !!!**
