@@ -28,3 +28,7 @@ __gcd(a,b)
 ## 3. DIFFERENCE OF TWO SQUARES
 
 _!!! IMPORTANT NOTE : Any number can be represented as a difference of two squares iff (the number)%4 != 2 !!!_
+
+## 4. PISANO PERIOD
+
+The **Fibonacci Series** under modulo repeats itself.
