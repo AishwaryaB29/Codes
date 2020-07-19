@@ -10,3 +10,13 @@ Majority of the Dynamic Programming problems can be categorized into two types:
 - Combinatorial problems.
 
 The optimization problems expect you to select a feasible solution, so that the value of the required function is minimized or maximized. Combinatorial problems expect you to figure out the number of ways to do something, or the probability of some event happening.
+
+
+**3. HOW TO SORT BY NOT LOSING TRACK OF INITIAL INDEX**
+Make pairs and store index and value. Sort by using the following function.
+ ```c++
+ bool byX(const Frog &a, const Frog &b)
+{
+	return a.x < b.x;
+}
+ ```
