@@ -155,3 +155,52 @@ void dijkstra(int s, vector<int> & d, vector<int> & p) {
     }
 }
 ```
+
+## BELLMAN-FORD
+Unlike the Dijkstra algorithm, this algorithm can also be applied to graphs containing negative weight edges . However, if the graph contains a negative cycle, then, clearly, the shortest path to some vertices may not exist (due to the fact that the weight of the shortest path must be equal to minus infinity); however, this algorithm can be modified to signal the presence of a cycle of negative weight, or even deduce this cycle.
+
+### Description
+Let us assume that the graph contains no negative weight cycle.
+We will create an array of distances d[0…n−1], which after execution of the algorithm will contain the answer to the problem. In the beginning we fill it as follows: d[v]=0, and all other elements d[] equal to infinity ∞.
+
+### Algorithm
+1) This step initializes distances from the source to all vertices as infinite and distance to the source itself as 0. Create an array dist[] of size |V| with all values as infinite except dist[src] where src is source vertex.
+
+2) This step calculates shortest distances. Do following |V|-1 times where |V| is the number of vertices in given graph.
+…..a) Do following for each edge u-v
+………………If dist[v] > dist[u] + weight of edge uv, then update dist[v]
+………………….dist[v] = dist[u] + weight of edge uv
+
+3) This step reports if there is a negative weight cycle in graph. Do following for each edge u-v
+……If dist[v] > dist[u] + weight of edge uv, then “Graph contains negative weight cycle”
+
+### Implementation
+```cpp
+struct edge
+{
+    int a, b, cost;
+};
+
+int n, m, v;
+vector<edge> e;
+const int INF = 1000000000;
+
+void solve()
+{
+    vector<int> d (n, INF);
+    d[v] = 0;
+    for (int i=0; i<n-1; ++i)
+        for (int j=0; j<m; ++j)
+            if (d[e[j].a] < INF)
+                d[e[j].b] = min (d[e[j].b], d[e[j].a] + e[j].cost);
+    // display d, for example, on the screen
+}
+
+```
+
+## DISJOINT SET UNION or UNION FIND
+This data structure provides the following capabilities. We are given several elements, each of which is a separate set. A DSU will have an operation to combine any two sets, and it will be able to tell in which set a specific element is. The classical version also introduces a third operation, it can create a set from a new element.
+The 3 operations are :
+- **make_set(v)** - creates a new set consisting of the new element v
+- **union_sets(a, b)** - merges the two specified sets (the set in which the element a is located, and the set in which the element b is located)
+- **find_set(v)** - returns the representative (also called leader) of the set that contains the element v. This representative is an element of its corresponding set. It is selected in each set by the data structure itself (and can change over time, namely after union_sets calls). This representative can be used to check if two elements are part of the same set of not. a and b are exactly in the same set, if find_set(a) == find_set(b). Otherwise they are in different sets.
