@@ -1,12 +1,12 @@
 # Codes
    ~ *All my brain cells in one place*
  
-Miracles do happen. Sometimes my brain can put together a piece of code that gets perfect AC's. 
-Sometimes I see a couple of WA's on the screen that stares into my soul while I let out a huge sigh.
-But nevertheless, my love for coding and programming never dies.
-My love for learning and improving never dies.
+Wonders do occur. At times my mind can assemble a bit of code that gets immaculate AC's.  
+Now and then I see a few WA's on the screen that gazes into my spirit while I let out an immense murmur.  
+In any case, all things considered, my affection for coding and programming never passes on.  
+My adoration for learning and improving never bites the dust.  
 
-This repository contains a bunch of codes from various contests I took part in. Each contest also contains a README file with every new thing I have learnt.
+This archive contains a bunch of codes from different challenges I participated in. Each challenge likewise contains a markdown with each new thing I have learnt.
 
 **PROFILES**
 - CodeChef : 
